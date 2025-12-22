@@ -10,8 +10,8 @@ export function Footer() {
           {/* About */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="CodeQuest HK Logo" className="h-10 w-10 rounded-full" />
-              <span>CodeQuest HK</span>
+              <img src={logo} alt="TyphoonHacks Logo" className="h-10 w-10 rounded-full" />
+              <span>TyphoonHacks</span>
             </div>
             <p className="text-gray-400 mb-4">
               Hong Kong's first true 48-hour hackathon where students build from scratch. 
@@ -63,10 +63,10 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p className="mb-2">
-            Organized by Hong Kong Joint-School Technology Union (HKJSTU) & CodeQuest HK Committee
+            Organized by Hong Kong Joint-School Technology Union (HKJSTU) & TyphoonHacks Committee
           </p>
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} CodeQuest HK. All rights reserved.
+            &copy; {new Date().getFullYear()} TyphoonHacks. All rights reserved.
           </p>
         </div>
       </div>

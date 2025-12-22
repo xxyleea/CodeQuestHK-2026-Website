@@ -46,9 +46,9 @@ export function Success2025({ onBack }: Success2025Props) {
             className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 mb-4"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span>Back to CodeQuestHK 2026</span>
+            <span>Back to TyphoonHacks 2026</span>
           </button>
-          <h2 className="text-gray-900 mb-4">CodeQuest HK 2025 Recap</h2>
+          <h2 className="text-gray-900 mb-4">TyphoonHacks 2025 Recap</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our inaugural year saw 35+ students create 5 working game prototypes in 48 hours
           </p>

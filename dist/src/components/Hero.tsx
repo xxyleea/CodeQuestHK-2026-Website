@@ -30,7 +30,7 @@ export function Hero() {
           </div>
           
           <h1 className="text-white mb-6 mx-auto">
-            <div className="mb-4 leading-none whitespace-nowrap" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, letterSpacing: '-0.04em', fontSize: 'clamp(2.5rem, 10vw, 12rem)' }}>CODEQUESTHK 2026</div>
+            <div className="mb-4 leading-none whitespace-nowrap" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, letterSpacing: '-0.04em', fontSize: 'clamp(2.5rem, 10vw, 12rem)' }}>TyphoonHacks 2026</div>
             <div className="text-xl md:text-2xl font-semibold text-cyan-300 text-center" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>Hong Kong Inter-School 48-Hour Hackathon</div>
           </h1>
           

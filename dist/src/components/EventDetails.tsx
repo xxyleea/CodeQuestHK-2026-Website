@@ -13,7 +13,7 @@ export function EventDetails() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-gray-900 mb-4 text-4xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>CodeQuestHK 2026: Event Details</h2>
+          <h2 className="text-gray-900 mb-4 text-4xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>TyphoonHacks 2026: Event Details</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Everything you need to know about this year's competition
           </p>
@@ -71,7 +71,7 @@ export function EventDetails() {
               <div>To Be Confirmed</div>
               <div className="text-sm text-gray-600 mt-3">
                 We're working with leading universities and venues in Hong Kong to provide 
-                the best possible experience for CodeQuestHK 2026
+                the best possible experience for TyphoonHacks 2026
               </div>
               <div className="mt-3 text-sm text-pink-600">
                 Announcement coming soon

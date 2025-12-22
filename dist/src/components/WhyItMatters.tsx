@@ -47,7 +47,7 @@ export function WhyItMatters() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-gray-900 mb-4">Why CodeQuestHK Matters</h2>
+          <h2 className="text-gray-900 mb-4">Why TyphoonHacks Matters</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             In one weekend, students gain skills that normally take years to acquire
           </p>

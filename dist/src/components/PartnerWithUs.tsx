@@ -54,7 +54,7 @@ export function PartnerWithUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-gray-900 mb-4">Partner with CodeQuest HK</h2>
+          <h2 className="text-gray-900 mb-4">Partner with TyphoonHacks</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join us in shaping the next generation of Hong Kong's tech leaders
           </p>
@@ -178,10 +178,10 @@ export function PartnerWithUs() {
           className="mt-16 text-center"
         >
           <p className="text-gray-600 mb-6">
-            Interested in partnering with CodeQuest HK 2026?
+            Interested in partnering with TyphoonHacks 2026?
           </p>
           <a
-            href="mailto:codequesthk@gmail.com?subject=Partnership Inquiry - CodeQuest HK 2026"
+            href="mailto:codequesthk@gmail.com?subject=Partnership Inquiry - TyphoonHacks 2026"
             className="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all transform hover:scale-105"
           >
             Contact Us for Partnership

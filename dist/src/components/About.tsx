@@ -13,7 +13,7 @@ export function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-gray-900 mb-4 text-4xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>What is CodeQuest HK?</h2>
+          <h2 className="text-gray-900 mb-4 text-4xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>What is TyphoonHacks?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Hong Kong's only student-run, high-school-only, 48-hour hackathon with a different theme every year.
           </p>
@@ -42,9 +42,9 @@ export function About() {
             <h3 className="text-gray-900 mb-4 text-2xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>A True Hackathon Experience</h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                CodeQuest HK is Hong Kong's first genuine 48-hour hackathon where students 
+                TyphoonHacks is Hong Kong's first genuine 48-hour hackathon where students 
                 must build everything from scratch during the event. Unlike other competitions 
-                where participants pre-prepare their projects, CodeQuest requires all development 
+                where participants pre-prepare their projects, TyphoonHacks requires all development 
                 to happen within the limited time frame—creating real-world pressure and authentic innovation.
               </p>
               <p>

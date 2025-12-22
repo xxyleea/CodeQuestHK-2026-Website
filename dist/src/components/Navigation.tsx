@@ -45,8 +45,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             onClick={() => handleTabChange('home')}
             className="flex items-center space-x-3"
           >
-            <img src={logo} alt="CodeQuest HK Logo" className="h-10 w-10 rounded-full" />
-            <span className="text-white">CodeQuest HK</span>
+            <img src={logo} alt="TyphoonHacks Logo" className="h-10 w-10 rounded-full" />
+            <span className="text-white">TyphoonHacks</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -59,7 +59,7 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
-              CodeQuestHK 2026
+              TyphoonHacks 2026
             </button>
             <button
               onClick={() => handleTabChange('2025')}
@@ -127,7 +127,7 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
-              CodeQuestHK 2026
+              TyphoonHacks 2026
             </button>
             <button
               onClick={() => handleTabChange('2025')}

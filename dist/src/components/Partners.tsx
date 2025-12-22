@@ -62,9 +62,9 @@ export function Partners({ onBack }: PartnersProps) {
             className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 mb-4"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span>Back to CodeQuestHK 2026</span>
+            <span>Back to TyphoonHacks 2026</span>
           </button>
-          <h2 className="text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '2.25rem', fontWeight: 700 }}>Partner with CodeQuest HK</h2>
+          <h2 className="text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '2.25rem', fontWeight: 700 }}>Partner with TyphoonHacks</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join us in shaping the next generation of Hong Kong's tech leaders
           </p>
@@ -172,7 +172,7 @@ export function Partners({ onBack }: PartnersProps) {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-gray-900 text-center mb-8" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>
-            CodeQuest 2025 Partners
+            TyphoonHacks 2025 Partners
           </h3>
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {past2025.map((partner, index) => (
@@ -207,7 +207,7 @@ export function Partners({ onBack }: PartnersProps) {
             Ready to Partner?
           </h3>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact us to discuss partnership opportunities for CodeQuestHK 2026
+            Contact us to discuss partnership opportunities for TyphoonHacks 2026
           </p>
           <a
             href="mailto:codequesthk@gmail.com"
