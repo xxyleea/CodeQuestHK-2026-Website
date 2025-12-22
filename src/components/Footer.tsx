@@ -63,7 +63,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p className="mb-2">
-            Organized by Hong Kong Joint-School Technology Union (HKJSTU) & TyphoonHacks Committee
+            Organised by Hong Kong Joint-School Technology Union (HKJSTU) & TyphoonHacks Committee
           </p>
           <p className="text-sm">
             &copy; {new Date().getFullYear()} TyphoonHacks. All rights reserved.
