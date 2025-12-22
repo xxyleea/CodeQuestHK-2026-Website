@@ -1,7 +1,7 @@
 
-  # CodeQuestHK 2026 Website
+  # TyphoonHacks 2026 Website
 
-  This is a code bundle for CodeQuestHK 2026 Website. The original project is available at https://www.figma.com/design/b0JEYNrcZgIuMIyrwuA0CB/CodeQuestHK-2026-Website.
+  This is a code bundle for TyphoonHacks 2026 Website. The original project is available at https://www.figma.com/design/b0JEYNrcZgIuMIyrwuA0CB/CodeQuestHK-2026-Website.
 
   ## Running the code
 
