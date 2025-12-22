@@ -115,7 +115,7 @@ export function Partners({ onBack }: PartnersProps) {
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
-                  <span>Company representative on judging panel</span>
+                  <span>Company representatives on judging panel</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
@@ -172,7 +172,7 @@ export function Partners({ onBack }: PartnersProps) {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-gray-900 text-center mb-8" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>
-            TyphoonHacks 2025 Partners
+            TyphoonHacks 2026 Partners
           </h3>
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {past2025.map((partner, index) => (

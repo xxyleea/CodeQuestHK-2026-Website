@@ -30,7 +30,7 @@ export function CallToAction() {
           <UserPlus className="w-16 h-16 mx-auto mb-6 text-cyan-400" />
           <h3 className="text-white mb-4">Registration Coming Soon</h3>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            We're finalizing the details for TyphoonHacks 2026. Registration will open soon—stay tuned for updates!
+            We're finalising the details for TyphoonHacks 2026. Registration will open soon—stay tuned for updates!
           </p>
           
           <div className="inline-block bg-yellow-500/20 backdrop-blur-sm text-yellow-300 px-6 py-3 rounded-full mb-8 border border-yellow-500/30">
