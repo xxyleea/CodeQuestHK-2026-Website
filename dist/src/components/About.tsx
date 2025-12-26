@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users, Lightbulb, Code, Presentation, Zap, RefreshCw } from 'lucide-react';
 import { motion } from 'motion/react';
+import picture2 from '../../pictures/picture2.jpg';
 
 export function About() {
   return (
@@ -27,7 +28,7 @@ export function About() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="/pictures/picture2.jpg"
+              src={picture2}
               alt="Students coding at hackathon"
               className="rounded-2xl shadow-xl w-full"
             />

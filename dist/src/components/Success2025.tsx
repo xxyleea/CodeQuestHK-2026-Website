@@ -1,6 +1,7 @@
 import React from 'react';
 import { Trophy, Star, ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
+import pic1 from '../../pictures/pic1.jpg';
 
 interface Success2025Props {
   onBack: () => void;
@@ -196,7 +197,7 @@ export function Success2025({ onBack }: Success2025Props) {
           className="mt-16 pb-8"
         >
           <img
-            src="/pictures/pic1.jpg"
+            src={pic1}
             alt="Team collaboration"
             className="rounded-2xl shadow-xl w-full"
           />
