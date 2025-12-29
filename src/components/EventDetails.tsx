@@ -214,7 +214,7 @@ export function EventDetails() {
                 title: 'Judging Panel',
                 desc: 'Corporate reps & tech professionals',
               },
-            ].map((item, index) => (
+            ].map((item) => (
               <div
                 key={item.title}
                 className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-cyan-400 transition-colors"

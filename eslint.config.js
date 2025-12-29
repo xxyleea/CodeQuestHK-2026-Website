@@ -23,10 +23,17 @@ export default defineConfig([
     },
   },
   {
+    // Disable react-refresh for UI components (shadcn/ui pattern exports both components and variants)
+    files: ['src/components/ui/**/*.{ts,tsx}'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  },
+  {
     plugins: {
       prettier,
     },
-    files: ['**/*.*'],
+    files: ['**/*.{ts,tsx,js,jsx}'],
     rules: {
       ...prettierConfig.rules,
       'prettier/prettier': 'error',
