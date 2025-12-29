@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
@@ -33,7 +33,8 @@ export default defineConfig({
       '@radix-ui/react-radio-group@1.2.3': '@radix-ui/react-radio-group',
       '@radix-ui/react-progress@1.1.2': '@radix-ui/react-progress',
       '@radix-ui/react-popover@1.1.6': '@radix-ui/react-popover',
-      '@radix-ui/react-navigation-menu@1.2.5': '@radix-ui/react-navigation-menu',
+      '@radix-ui/react-navigation-menu@1.2.5':
+        '@radix-ui/react-navigation-menu',
       '@radix-ui/react-menubar@1.1.6': '@radix-ui/react-menubar',
       '@radix-ui/react-label@2.1.2': '@radix-ui/react-label',
       '@radix-ui/react-hover-card@1.1.6': '@radix-ui/react-hover-card',
@@ -51,7 +52,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    outDir: 'build',
+    outDir: 'dist',
   },
   server: {
     port: 3000,

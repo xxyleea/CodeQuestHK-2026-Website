@@ -1,59 +1,24 @@
-# Dependencies
-node_modules
-/jspm_packages
-
-# Build output
-/dist
-/build
-/out
-.amplify-hosting
-
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+node_modules
+dist
+dist-ssr
+*.local
 
-# OS and Editor files
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.Spotlight-V100
-.Trashes
+# Editor directories and files
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
-
-# Environment variables
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-.env.*.local
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional caches
-.npm
-.eslintcache
-.stylelintcache
-.cache
-.parcel-cache
-
-# Vite-specific
-.vitepress/cache
-.vit
-stats.html
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

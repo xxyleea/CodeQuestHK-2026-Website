@@ -10,12 +10,17 @@ export function Footer() {
           {/* About */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="TyphoonHacks Logo" className="h-10 w-10 rounded-full" />
+              <img
+                src={logo}
+                alt="TyphoonHacks Logo"
+                className="h-10 w-10 rounded-full"
+              />
               <span>TyphoonHacks</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Hong Kong's first true 48-hour hackathon where students build from scratch. 
-              A different theme every year, empowering the next generation of tech leaders.
+              Hong Kong's first true 48-hour hackathon where students build from
+              scratch. A different theme every year, empowering the next
+              generation of tech leaders.
             </p>
             <div className="flex gap-4">
               <a
@@ -42,12 +47,15 @@ export function Footer() {
             <h4 className="text-white mb-4">Contact Us</h4>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="mailto:codequesthk@gmail.com" className="hover:text-cyan-400 transition-colors">
+                <a
+                  href="mailto:codequesthk@gmail.com"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   codequesthk@gmail.com
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   href="https://instagram.com/codequesthk"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -63,7 +71,8 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p className="mb-2">
-            Organised by Hong Kong Joint-School Technology Union (HKJSTU) & TyphoonHacks Committee
+            Organised by Hong Kong Joint-School Technology Union (HKJSTU) &
+            TyphoonHacks Committee
           </p>
           <p className="text-sm">
             &copy; {new Date().getFullYear()} TyphoonHacks. All rights reserved.

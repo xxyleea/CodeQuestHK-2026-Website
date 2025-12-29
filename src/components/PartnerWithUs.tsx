@@ -7,22 +7,26 @@ export function PartnerWithUs() {
     {
       icon: Users,
       title: 'Talent Pipeline',
-      description: 'Direct access to 60-80 of Hong Kong\'s brightest high school tech talents.',
+      description:
+        "Direct access to 60-80 of Hong Kong's brightest high school tech talents.",
     },
     {
       icon: Megaphone,
       title: 'Brand Visibility',
-      description: 'Your brand showcased across event materials, social media, and 30+ schools.',
+      description:
+        'Your brand showcased across event materials, social media, and 30+ schools.',
     },
     {
       icon: Award,
       title: 'Problem Solving',
-      description: 'Present real business challenges and get innovative solutions from fresh perspectives.',
+      description:
+        'Present real business challenges and get innovative solutions from fresh perspectives.',
     },
     {
       icon: Building,
       title: 'CSR Impact',
-      description: 'Invest in Hong Kong\'s future tech leaders and demonstrate corporate social responsibility.',
+      description:
+        "Invest in Hong Kong's future tech leaders and demonstrate corporate social responsibility.",
     },
   ];
 
@@ -88,7 +92,9 @@ export function PartnerWithUs() {
           transition={{ duration: 0.6 }}
           className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 md:p-12 mb-16 text-white"
         >
-          <h3 className="text-white text-center mb-8">Partnership Opportunities</h3>
+          <h3 className="text-white text-center mb-8">
+            Partnership Opportunities
+          </h3>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <h4 className="text-cyan-300 mb-4">What We Offer</h4>
@@ -128,7 +134,9 @@ export function PartnerWithUs() {
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
-                  <span>Prize contributions (internships, hardware, courses)</span>
+                  <span>
+                    Prize contributions (internships, hardware, courses)
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
@@ -142,7 +150,8 @@ export function PartnerWithUs() {
             </div>
           </div>
           <p className="text-center text-cyan-200 text-sm">
-            We offer flexible partnership packages tailored to your organization's goals and budget.
+            We offer flexible partnership packages tailored to your
+            organization's goals and budget.
           </p>
         </motion.div>
 
@@ -160,9 +169,14 @@ export function PartnerWithUs() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {past2025.map((partner) => (
-              <div key={partner.name} className="bg-white rounded-xl p-6 border border-gray-200">
+              <div
+                key={partner.name}
+                className="bg-white rounded-xl p-6 border border-gray-200"
+              >
                 <div className="text-gray-900 mb-2">{partner.name}</div>
-                <div className="text-sm text-cyan-600 mb-3">{partner.contribution}</div>
+                <div className="text-sm text-cyan-600 mb-3">
+                  {partner.contribution}
+                </div>
                 <p className="text-sm text-gray-600">{partner.impact}</p>
               </div>
             ))}

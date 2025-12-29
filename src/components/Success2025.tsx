@@ -8,27 +8,29 @@ interface Success2025Props {
 }
 
 export function Success2025({ onBack }: Success2025Props) {
-
   const winners = [
     {
       place: 'Champion',
       team: 'Group 3',
       project: '天下太平 (World Peace)',
-      description: 'An innovative game blending Hong Kong folklore with traditional playground games. Features the local ritual of "打小人" and classic grid-based gameplay.',
+      description:
+        'An innovative game blending Hong Kong folklore with traditional playground games. Features the local ritual of "打小人" and classic grid-based gameplay.',
       highlight: 'Cultural Connect',
     },
     {
       place: '1st Runner-Up',
       team: 'Group 5',
       project: 'Greenshooter',
-      description: 'A strategic tower-defense game where players build eco-friendly facilities to stop waves of waste from polluting a forest.',
+      description:
+        'A strategic tower-defense game where players build eco-friendly facilities to stop waves of waste from polluting a forest.',
       highlight: 'Green Gaming',
     },
     {
       place: '2nd Runner-Up',
       team: 'Group 1',
       project: 'Hong Kong Culture Minigames',
-      description: 'A charming collection of five casual mini-games celebrating vibrant Hong Kong culture, including Cha Chaan Teng Simulator.',
+      description:
+        'A charming collection of five casual mini-games celebrating vibrant Hong Kong culture, including Cha Chaan Teng Simulator.',
       highlight: 'Cultural Connect',
     },
   ];
@@ -51,7 +53,8 @@ export function Success2025({ onBack }: Success2025Props) {
           </button>
           <h2 className="text-gray-900 mb-4">CodeQuest 2025 Recap</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our inaugural year saw 35+ students create 5 working game prototypes in 48 hours
+            Our inaugural year saw 35+ students create 5 working game prototypes
+            in 48 hours
           </p>
         </motion.div>
 
@@ -101,7 +104,9 @@ export function Success2025({ onBack }: Success2025Props) {
 
         {/* Winning Projects */}
         <div className="mb-16">
-          <h3 className="text-gray-900 text-center mb-8">Award-Winning Projects</h3>
+          <h3 className="text-gray-900 text-center mb-8">
+            Award-Winning Projects
+          </h3>
           <div className="grid md:grid-cols-3 gap-8">
             {winners.map((winner, index) => (
               <motion.div
@@ -113,14 +118,20 @@ export function Success2025({ onBack }: Success2025Props) {
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <Trophy className={`w-6 h-6 ${index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-400' : 'text-orange-600'}`} />
-                  <span className={`${index === 0 ? 'text-yellow-600' : index === 1 ? 'text-gray-600' : 'text-orange-600'}`}>
+                  <Trophy
+                    className={`w-6 h-6 ${index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-400' : 'text-orange-600'}`}
+                  />
+                  <span
+                    className={`${index === 0 ? 'text-yellow-600' : index === 1 ? 'text-gray-600' : 'text-orange-600'}`}
+                  >
                     {winner.place}
                   </span>
                 </div>
                 <h4 className="text-gray-900 mb-2">{winner.project}</h4>
                 <div className="text-sm text-gray-500 mb-3">{winner.team}</div>
-                <p className="text-gray-600 text-sm mb-4">{winner.description}</p>
+                <p className="text-gray-600 text-sm mb-4">
+                  {winner.description}
+                </p>
                 <div className="inline-block bg-cyan-50 text-cyan-600 px-3 py-1 rounded-full text-sm">
                   {winner.highlight}
                 </div>
@@ -142,29 +153,32 @@ export function Success2025({ onBack }: Success2025Props) {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <h4 className="text-cyan-300 mb-3">Theme: Game Development</h4>
               <p className="text-gray-300 text-sm">
-                Teams explored two creative themes: "Cultural Connect" celebrating Hong Kong's heritage, 
-                and "Green Gaming" promoting environmental conservation.
+                Teams explored two creative themes: "Cultural Connect"
+                celebrating Hong Kong's heritage, and "Green Gaming" promoting
+                environmental conservation.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <h4 className="text-cyan-300 mb-3">Venue & Support</h4>
               <p className="text-gray-300 text-sm">
-                Hosted at City University of Hong Kong with mentorship from university students 
-                and workshops from industry professionals.
+                Hosted at City University of Hong Kong with mentorship from
+                university students and workshops from industry professionals.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <h4 className="text-cyan-300 mb-3">Judging Panel</h4>
               <p className="text-gray-300 text-sm">
-                Distinguished panel including Mr. Jack Wu (DTSL Group), Mr. Peter Cheung (HK Programming Society), 
-                and Mr. Louis Cheung (Decisions Lab).
+                Distinguished panel including Mr. Jack Wu (DTSL Group), Mr.
+                Peter Cheung (HK Programming Society), and Mr. Louis Cheung
+                (Decisions Lab).
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <h4 className="text-cyan-300 mb-3">Participant Feedback</h4>
               <p className="text-gray-300 text-sm">
-                83% rated the event 4-5 stars. Students praised the hands-on development time, 
-                networking opportunities, and professional workshops.
+                83% rated the event 4-5 stars. Students praised the hands-on
+                development time, networking opportunities, and professional
+                workshops.
               </p>
             </div>
           </div>
@@ -184,7 +198,9 @@ export function Success2025({ onBack }: Success2025Props) {
             <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
             <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
             <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-            <span className="ml-2 text-gray-700">83% rated 4-5 stars for overall satisfaction</span>
+            <span className="ml-2 text-gray-700">
+              83% rated 4-5 stars for overall satisfaction
+            </span>
           </div>
         </motion.div>
 

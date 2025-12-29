@@ -30,9 +30,10 @@ export function CallToAction() {
           <UserPlus className="w-16 h-16 mx-auto mb-6 text-cyan-400" />
           <h3 className="text-white mb-4">Registration Coming Soon</h3>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            We're finalising the details for TyphoonHacks 2026. Registration will open soon—stay tuned for updates!
+            We're finalising the details for TyphoonHacks 2026. Registration
+            will open soon—stay tuned for updates!
           </p>
-          
+
           <div className="inline-block bg-yellow-500/20 backdrop-blur-sm text-yellow-300 px-6 py-3 rounded-full mb-8 border border-yellow-500/30">
             Stay Tuned for Registration Announcements
           </div>
@@ -95,7 +96,8 @@ export function CallToAction() {
             <Mail className="w-12 h-12 text-cyan-600 mx-auto mb-4" />
             <h4 className="text-gray-900 mb-4">Questions? Get in Touch</h4>
             <p className="text-gray-600 mb-6">
-              For any inquiries about participation, partnership, or the event, contact us at:
+              For any inquiries about participation, partnership, or the event,
+              contact us at:
             </p>
             <a
               href="mailto:codequesthk@gmail.com"

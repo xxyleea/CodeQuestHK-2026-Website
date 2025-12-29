@@ -10,7 +10,9 @@ import { Footer } from './components/Footer';
 import { Navigation } from './components/Navigation';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'home' | '2025' | 'partners'>('home');
+  const [activeTab, setActiveTab] = useState<'home' | '2025' | 'partners'>(
+    'home'
+  );
 
   return (
     <div className="min-h-screen bg-white">

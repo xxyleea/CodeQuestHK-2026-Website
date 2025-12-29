@@ -7,25 +7,29 @@ export function WhyItMatters() {
     {
       icon: Brain,
       title: 'System Design & Development',
-      description: 'Master full-stack development under extreme time pressure—skills that normally take years to acquire.',
+      description:
+        'Master full-stack development under extreme time pressure—skills that normally take years to acquire.',
       color: 'blue',
     },
     {
       icon: Lightbulb,
       title: 'Design Thinking',
-      description: 'Learn user-centered problem solving and creative approaches to real business challenges.',
+      description:
+        'Learn user-centered problem solving and creative approaches to real business challenges.',
       color: 'purple',
     },
     {
       icon: Network,
       title: 'Real-World Collaboration',
-      description: 'Experience cross-school teaming with strangers, just like in professional environments.',
+      description:
+        'Experience cross-school teaming with strangers, just like in professional environments.',
       color: 'pink',
     },
     {
       icon: Award,
       title: 'Professional Skills',
-      description: 'Develop client interviewing, presentation, and consulting framework skills.',
+      description:
+        'Develop client interviewing, presentation, and consulting framework skills.',
       color: 'green',
     },
   ];
@@ -49,7 +53,8 @@ export function WhyItMatters() {
         >
           <h2 className="text-gray-900 mb-4">Why TyphoonHacks Matters</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            In one weekend, students gain skills that normally take years to acquire
+            In one weekend, students gain skills that normally take years to
+            acquire
           </p>
         </motion.div>
 
@@ -63,7 +68,9 @@ export function WhyItMatters() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className={`bg-gradient-to-r ${colorClasses[skill.color as keyof typeof colorClasses]} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+              <div
+                className={`bg-gradient-to-r ${colorClasses[skill.color as keyof typeof colorClasses]} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}
+              >
                 <skill.icon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-gray-900 mb-3">{skill.title}</h3>
@@ -85,9 +92,10 @@ export function WhyItMatters() {
               <Rocket className="w-12 h-12 mb-4" />
               <h3 className="text-white mb-4">Launch Your Tech Career</h3>
               <p className="text-white/90 mb-6">
-                Connect with industry mentors, tech professionals, and like-minded peers. 
-                Build your portfolio with real projects. Win prizes including cash awards, 
-                internship opportunities, and professional certificates.
+                Connect with industry mentors, tech professionals, and
+                like-minded peers. Build your portfolio with real projects. Win
+                prizes including cash awards, internship opportunities, and
+                professional certificates.
               </p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">

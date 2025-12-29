@@ -1,5 +1,12 @@
 import React from 'react';
-import { Handshake, Users, Megaphone, Award, Building, ArrowLeft } from 'lucide-react';
+import {
+  Handshake,
+  Users,
+  Megaphone,
+  Award,
+  Building,
+  ArrowLeft,
+} from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface PartnersProps {
@@ -11,22 +18,26 @@ export function Partners({ onBack }: PartnersProps) {
     {
       icon: Users,
       title: 'Talent Pipeline',
-      description: 'Direct access to 60-80 of Hong Kong\'s brightest high school tech talents.',
+      description:
+        "Direct access to 60-80 of Hong Kong's brightest high school tech talents.",
     },
     {
       icon: Megaphone,
       title: 'Brand Visibility',
-      description: 'Your brand showcased across event materials, social media, and 30+ schools.',
+      description:
+        'Your brand showcased across event materials, social media, and 30+ schools.',
     },
     {
       icon: Award,
       title: 'Problem Solving',
-      description: 'Present real business challenges and get innovative solutions from fresh perspectives.',
+      description:
+        'Present real business challenges and get innovative solutions from fresh perspectives.',
     },
     {
       icon: Building,
       title: 'CSR Impact',
-      description: 'Invest in Hong Kong\'s future tech leaders and demonstrate corporate social responsibility.',
+      description:
+        "Invest in Hong Kong's future tech leaders and demonstrate corporate social responsibility.",
     },
   ];
 
@@ -64,7 +75,16 @@ export function Partners({ onBack }: PartnersProps) {
             <ArrowLeft className="w-5 h-5" />
             <span>Back to TyphoonHacks 2026</span>
           </button>
-          <h2 className="text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '2.25rem', fontWeight: 700 }}>Partner with TyphoonHacks</h2>
+          <h2
+            className="text-gray-900 mb-4"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontSize: '2.25rem',
+              fontWeight: 700,
+            }}
+          >
+            Partner with TyphoonHacks
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join us in shaping the next generation of Hong Kong's tech leaders
           </p>
@@ -84,7 +104,13 @@ export function Partners({ onBack }: PartnersProps) {
               <div className="bg-cyan-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <benefit.icon className="w-8 h-8 text-cyan-600" />
               </div>
-              <h4 className="text-gray-900 mb-2" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+              <h4
+                className="text-gray-900 mb-2"
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontWeight: 600,
+                }}
+              >
                 {benefit.title}
               </h4>
               <p className="text-gray-600 text-sm">{benefit.description}</p>
@@ -100,12 +126,25 @@ export function Partners({ onBack }: PartnersProps) {
           transition={{ duration: 0.6 }}
           className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 md:p-12 mb-16 text-white"
         >
-          <h3 className="text-white text-center mb-8" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>
+          <h3
+            className="text-white text-center mb-8"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontSize: '1.5rem',
+              fontWeight: 700,
+            }}
+          >
             Partnership Opportunities
           </h3>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h4 className="text-cyan-300 mb-4" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+              <h4
+                className="text-cyan-300 mb-4"
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontWeight: 600,
+                }}
+              >
                 What We Offer
               </h4>
               <ul className="space-y-3">
@@ -132,7 +171,13 @@ export function Partners({ onBack }: PartnersProps) {
               </ul>
             </div>
             <div>
-              <h4 className="text-cyan-300 mb-4" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+              <h4
+                className="text-cyan-300 mb-4"
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontWeight: 600,
+                }}
+              >
                 Ways to Contribute
               </h4>
               <ul className="space-y-3">
@@ -146,7 +191,9 @@ export function Partners({ onBack }: PartnersProps) {
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
-                  <span>Prize contributions (internships, hardware, courses)</span>
+                  <span>
+                    Prize contributions (internships, hardware, courses)
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
@@ -160,7 +207,8 @@ export function Partners({ onBack }: PartnersProps) {
             </div>
           </div>
           <p className="text-center text-cyan-200 text-sm">
-            We offer flexible partnership packages tailored to your organization's goals and budget.
+            We offer flexible partnership packages tailored to your
+            organization's goals and budget.
           </p>
         </motion.div>
 
@@ -171,7 +219,14 @@ export function Partners({ onBack }: PartnersProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-gray-900 text-center mb-8" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>
+          <h3
+            className="text-gray-900 text-center mb-8"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontSize: '1.5rem',
+              fontWeight: 700,
+            }}
+          >
             TyphoonHacks 2026 Partners
           </h3>
           <div className="grid md:grid-cols-3 gap-6 mb-16">
@@ -184,10 +239,18 @@ export function Partners({ onBack }: PartnersProps) {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow"
               >
-                <h4 className="text-gray-900 mb-2" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+                <h4
+                  className="text-gray-900 mb-2"
+                  style={{
+                    fontFamily: 'Montserrat, sans-serif',
+                    fontWeight: 600,
+                  }}
+                >
                   {partner.name}
                 </h4>
-                <div className="text-cyan-600 text-sm font-semibold mb-3">{partner.contribution}</div>
+                <div className="text-cyan-600 text-sm font-semibold mb-3">
+                  {partner.contribution}
+                </div>
                 <p className="text-gray-600 text-sm">{partner.impact}</p>
               </motion.div>
             ))}
@@ -203,11 +266,19 @@ export function Partners({ onBack }: PartnersProps) {
           className="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <Handshake className="w-16 h-16 mx-auto mb-6" />
-          <h3 className="text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>
+          <h3
+            className="text-white mb-4"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontSize: '1.5rem',
+              fontWeight: 700,
+            }}
+          >
             Ready to Partner?
           </h3>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact us to discuss partnership opportunities for TyphoonHacks 2026
+            Contact us to discuss partnership opportunities for TyphoonHacks
+            2026
           </p>
           <a
             href="mailto:codequesthk@gmail.com"

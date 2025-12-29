@@ -45,7 +45,11 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             onClick={() => handleTabChange('home')}
             className="flex items-center space-x-3"
           >
-            <img src={logo} alt="TyphoonHacks Logo" className="h-10 w-10 rounded-full" />
+            <img
+              src={logo}
+              alt="TyphoonHacks Logo"
+              className="h-10 w-10 rounded-full"
+            />
             <span className="text-white">TyphoonHacks</span>
           </button>
 
@@ -54,8 +58,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             <button
               onClick={() => handleTabChange('home')}
               className={`px-6 py-2 rounded-full font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'home' 
-                  ? 'bg-cyan-500 text-gray-900' 
+                activeTab === 'home'
+                  ? 'bg-cyan-500 text-gray-900'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
@@ -64,8 +68,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             <button
               onClick={() => handleTabChange('2025')}
               className={`px-6 py-2 rounded-full font-semibold transition-all whitespace-nowrap ${
-                activeTab === '2025' 
-                  ? 'bg-blue-500 text-white' 
+                activeTab === '2025'
+                  ? 'bg-blue-500 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
@@ -74,8 +78,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             <button
               onClick={() => handleTabChange('partners')}
               className={`px-6 py-2 rounded-full font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'partners' 
-                  ? 'bg-purple-500 text-white' 
+                activeTab === 'partners'
+                  ? 'bg-purple-500 text-white'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
             >
@@ -122,8 +126,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             <button
               onClick={() => handleTabChange('home')}
               className={`block w-full text-left px-4 py-2 rounded-lg font-semibold transition-all ${
-                activeTab === 'home' 
-                  ? 'bg-cyan-500 text-gray-900' 
+                activeTab === 'home'
+                  ? 'bg-cyan-500 text-gray-900'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
@@ -132,8 +136,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             <button
               onClick={() => handleTabChange('2025')}
               className={`block w-full text-left px-4 py-2 rounded-lg font-semibold transition-all ${
-                activeTab === '2025' 
-                  ? 'bg-blue-500 text-white' 
+                activeTab === '2025'
+                  ? 'bg-blue-500 text-white'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
@@ -142,8 +146,8 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
             <button
               onClick={() => handleTabChange('partners')}
               className={`block w-full text-left px-4 py-2 rounded-lg font-semibold transition-all ${
-                activeTab === 'partners' 
-                  ? 'bg-purple-500 text-white' 
+                activeTab === 'partners'
+                  ? 'bg-purple-500 text-white'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
