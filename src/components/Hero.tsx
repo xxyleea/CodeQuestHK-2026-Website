@@ -1,10 +1,10 @@
-import React from 'react';
-import { Calendar, Users, Trophy, ArrowDown } from 'lucide-react';
+import { Instagram, ChevronDown } from 'lucide-react';
 import { motion } from 'motion/react';
+import logo from '../assets/logo.png';
 
 export function Hero() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+  const scrollToAbout = () => {
+    const element = document.getElementById('about');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <div
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
+      className="relative min-h-[calc(100vh-4rem)] flex items-start md:items-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -26,92 +26,146 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="inline-block bg-cyan-500/20 backdrop-blur-sm text-cyan-300 px-4 py-2 rounded-full mb-6 border border-cyan-500/30">
-            14–15 February 2026 • Hong Kong
-          </div>
+      {/* Large Background Logo - Right Side */}
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 0.25, x: 0 }}
+        transition={{ duration: 1.2, ease: 'easeOut' }}
+        className="absolute right-[-10%] top-1/2 -translate-y-1/2 pointer-events-none z-0"
+      >
+        <img
+          src={logo}
+          alt=""
+          className="w-[70vw] h-[70vw] max-w-[700px] max-h-[700px] object-contain"
+        />
+      </motion.div>
 
-          <h1 className="text-white mb-6 mx-auto">
-            <div
-              className="mb-4 leading-none whitespace-nowrap"
-              style={{
-                fontFamily: 'Montserrat, sans-serif',
-                fontWeight: 900,
-                letterSpacing: '-0.04em',
-                fontSize: 'clamp(2.5rem, 10vw, 12rem)',
-              }}
+      {/* Main Content */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col justify-between h-full py-8">
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-left max-w-4xl"
+          >
+            {/* Event Name */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-cyan-400 text-2xl md:text-3xl font-semibold mb-3 tracking-wide"
+              style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               TyphoonHacks 2026
-            </div>
-            <div
-              className="text-xl md:text-2xl font-semibold text-cyan-300 text-center"
-              style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}
+            </motion.p>
+
+            {/* Main Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-white leading-tight mb-5"
+              style={{
+                fontFamily: 'Montserrat, sans-serif',
+                fontWeight: 800,
+                letterSpacing: '-0.02em',
+                fontSize: 'clamp(1.5rem, 4.5vw, 4rem)',
+              }}
             >
-              Hong Kong Inter-School 48-Hour Hackathon
-            </div>
-          </h1>
+              Hong Kong's first true 48-hour high school hackathon
+            </motion.h1>
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-            Hong Kong's first true 48-hour hackathon where students build from
-            scratch—no pre-prepared projects allowed.
-          </p>
-          <p className="text-lg text-cyan-300 max-w-3xl mx-auto mb-8">
-            This year's theme:{' '}
-            <span className="font-semibold">
-              "Technology Consulting for the Future"
-            </span>
-          </p>
+            {/* Theme with Fancy Hover Effect */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="mb-6"
+            >
+              <div className="group inline-block relative px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 cursor-pointer overflow-hidden transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/40 hover:scale-105">
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-400/40 to-cyan-500/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                <span className="relative text-cyan-300 text-sm md:text-base group-hover:text-cyan-200 transition-colors duration-300">
+                  This year's theme:{' '}
+                  <span className="font-semibold text-white group-hover:text-cyan-50 transition-colors duration-300">
+                    Technology Consulting for the Future
+                  </span>
+                </span>
+              </div>
+            </motion.div>
 
-          <div className="inline-block bg-yellow-500/20 backdrop-blur-sm text-yellow-300 px-6 py-3 rounded-full mb-12 border border-yellow-500/30">
-            Registration Opening Soon - Stay Tuned!
-          </div>
-
-          {/* Quick Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
-          >
-            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-cyan-500/30">
-              <Users className="w-12 h-12 text-cyan-400 mx-auto mb-3" />
-              <div className="text-3xl text-white mb-2">60-80</div>
-              <div className="text-gray-300">Students from 30+ Schools</div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-cyan-500/30">
-              <Calendar className="w-12 h-12 text-cyan-400 mx-auto mb-3" />
-              <div className="text-3xl text-white mb-2">48 Hours</div>
-              <div className="text-gray-300">Build from Scratch</div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-cyan-500/30">
-              <Trophy className="w-12 h-12 text-cyan-400 mx-auto mb-3" />
-              <div className="text-3xl text-white mb-2">Real Problems</div>
-              <div className="text-gray-300">From Industry Partners</div>
-            </div>
+            {/* Feature List */}
+            <motion.ul
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="space-y-2 text-gray-300 text-sm md:text-base"
+            >
+              {[
+                'Work with hackers from across HK',
+                'Get real problems from industry partners',
+                'Build from scratch in 48 hours',
+                'No pre-prepared projects allowed',
+              ].map((item, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
+                  className="flex items-center gap-2"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0" />
+                  {item}
+                </motion.li>
+              ))}
+            </motion.ul>
           </motion.div>
-        </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.button
-          onClick={() => scrollToSection('about')}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cyan-400"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            <ArrowDown className="w-8 h-8" />
-          </motion.div>
-        </motion.button>
+        </div>
       </div>
+
+      {/* Bottom Right Section - Registration & CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+        className="absolute bottom-24 right-8 sm:right-12 lg:right-16 z-20 flex flex-col items-end gap-4"
+      >
+        <div className="group relative px-5 py-2.5 rounded-full bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-400/40 backdrop-blur-sm overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-300/30 to-yellow-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+          <span className="relative text-yellow-300 text-base md:text-lg font-semibold tracking-wide">
+            Registration opens soon...
+          </span>
+        </div>
+        <a
+          href="https://instagram.com/typhoonhackshk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+        >
+          <Instagram className="w-5 h-5" />
+          <span className="text-base">Follow for Updates</span>
+        </a>
+      </motion.div>
+
+      {/* Scroll Down Indicator */}
+      <motion.button
+        onClick={scrollToAbout}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 1.1 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer"
+        aria-label="Scroll to learn more"
+      >
+        <span className="text-xs font-medium tracking-wider uppercase">
+          Discover More
+        </span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <ChevronDown className="w-6 h-6" />
+        </motion.div>
+      </motion.button>
     </div>
   );
 }
