@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { WhyItMatters } from './components/WhyItMatters';
@@ -9,27 +9,29 @@ import { CallToAction } from './components/CallToAction';
 import { Footer } from './components/Footer';
 import { Navigation } from './components/Navigation';
 
-export default function App() {
-  const [activeTab, setActiveTab] = useState<'home' | '2025' | 'partners'>(
-    'home'
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <WhyItMatters />
+      <EventDetails />
+      <CallToAction />
+    </>
   );
+}
+
+export default function App() {
+  const location = useLocation();
 
   return (
     <div className="min-h-screen bg-white">
-      <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
-      {activeTab === 'home' ? (
-        <>
-          <Hero />
-          <About />
-          <WhyItMatters />
-          <EventDetails />
-          <CallToAction />
-        </>
-      ) : activeTab === '2025' ? (
-        <Success2025 onBack={() => setActiveTab('home')} />
-      ) : (
-        <Partners onBack={() => setActiveTab('home')} />
-      )}
+      <Navigation currentPath={location.pathname} />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/2025" element={<Success2025 />} />
+        <Route path="/partners" element={<Partners />} />
+      </Routes>
       <Footer />
     </div>
   );

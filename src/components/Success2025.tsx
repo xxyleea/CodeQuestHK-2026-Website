@@ -1,13 +1,9 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Trophy, Star, ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
 import pic1 from '../assets/pic1.jpg';
 
-interface Success2025Props {
-  onBack: () => void;
-}
-
-export function Success2025({ onBack }: Success2025Props) {
+export function Success2025() {
   const winners = [
     {
       place: 'Champion',
@@ -44,13 +40,13 @@ export function Success2025({ onBack }: Success2025Props) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <button
-            onClick={onBack}
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 mb-4"
           >
             <ArrowLeft className="w-5 h-5" />
             <span>Back to TyphoonHacks 2026</span>
-          </button>
+          </Link>
           <h2 className="text-gray-900 mb-4">CodeQuest 2025 Recap</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our inaugural year saw 35+ students create 5 working game prototypes

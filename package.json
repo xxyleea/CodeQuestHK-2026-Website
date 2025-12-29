@@ -1,5 +1,5 @@
 {
-  "name": "TyphoonHacks 2026 Website",
+  "name": "typhoonhacks-2026-website",
   "homepage": "https://xxyleea.github.io/CodequestHK-2026-Website",
   "version": "0.1.0",
   "private": true,
@@ -54,6 +54,7 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.55.0",
     "react-resizable-panels": "^2.1.7",
+    "react-router-dom": "^7.11.0",
     "recharts": "^2.15.2",
     "sonner": "^2.0.3",
     "tailwind-merge": "*",

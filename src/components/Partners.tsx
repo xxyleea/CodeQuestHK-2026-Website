@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Handshake,
   Users,
@@ -9,11 +9,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
-interface PartnersProps {
-  onBack: () => void;
-}
-
-export function Partners({ onBack }: PartnersProps) {
+export function Partners() {
   const benefits = [
     {
       icon: Users,
@@ -68,13 +64,13 @@ export function Partners({ onBack }: PartnersProps) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <button
-            onClick={onBack}
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 mb-4"
           >
             <ArrowLeft className="w-5 h-5" />
             <span>Back to TyphoonHacks 2026</span>
-          </button>
+          </Link>
           <h2
             className="text-gray-900 mb-4"
             style={{
