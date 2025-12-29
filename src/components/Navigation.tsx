@@ -58,7 +58,7 @@ export function Navigation({ currentPath }: NavigationProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-4">
             <Link
               to="/"
               onClick={handleLinkClick}
