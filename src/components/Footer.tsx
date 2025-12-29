@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Instagram } from 'lucide-react';
-import logo from 'figma:asset/ae6efa433c67d69913609d2291c9fee036091676.png';
+import logo from '../assets/logo.png';
 
 export function Footer() {
   return (

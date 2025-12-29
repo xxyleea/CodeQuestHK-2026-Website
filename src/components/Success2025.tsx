@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trophy, Star, ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
-import pic1 from '../../pictures/pic1.jpg';
+import pic1 from '../assets/pic1.jpg';
 
 interface Success2025Props {
   onBack: () => void;

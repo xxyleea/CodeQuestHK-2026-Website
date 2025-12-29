@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Lightbulb, Code, Presentation, Zap, RefreshCw } from 'lucide-react';
 import { motion } from 'motion/react';
-import picture2 from '../../pictures/picture2.jpg';
+import picture2 from '../assets/picture2.jpg';
 
 export function About() {
   return (
