@@ -9,6 +9,7 @@ import TyphoonLogo from "../TyphoonLogo";
 import { linksConfig } from "@/app/config/links";
 
 const taglines = [
+  "#1 high school hackathon in Hong Kong",
   "Build from scratch",
   "No pre-prepared projects",
   "Create working prototypes",
@@ -17,13 +18,47 @@ const taglines = [
 
 export default function HeroSection() {
   const [taglineIndex, setTaglineIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTaglineIndex((prev) => (prev + 1) % taglines.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+    const currentTagline = taglines[taglineIndex];
+    const typingSpeed = 50; // ms per character when typing
+    const deletingSpeed = 30; // ms per character when deleting
+    const pauseAfterTyping = 2500; // pause duration after full text is shown
+    const pauseAfterDeleting = 300; // brief pause before typing next tagline
+
+    let timeout: NodeJS.Timeout;
+
+    if (isTyping) {
+      if (displayedText.length < currentTagline.length) {
+        // Still typing
+        timeout = setTimeout(() => {
+          setDisplayedText(currentTagline.slice(0, displayedText.length + 1));
+        }, typingSpeed);
+      } else {
+        // Finished typing, pause then start deleting
+        timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, pauseAfterTyping);
+      }
+    } else {
+      if (displayedText.length > 0) {
+        // Still deleting
+        timeout = setTimeout(() => {
+          setDisplayedText(displayedText.slice(0, -1));
+        }, deletingSpeed);
+      } else {
+        // Finished deleting, move to next tagline
+        timeout = setTimeout(() => {
+          setTaglineIndex((prev) => (prev + 1) % taglines.length);
+          setIsTyping(true);
+        }, pauseAfterDeleting);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, isTyping, taglineIndex]);
 
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("overview");
@@ -77,7 +112,7 @@ export default function HeroSection() {
           className="mb-6 inline-block"
         >
           <span className="bg-electric-cyan/20 text-electric-cyan border-electric-cyan/30 rounded-full border px-4 py-2 text-sm font-semibold tracking-wider uppercase">
-            Hong Kong&apos;s First
+            14-15 Feb, Hong Kong
           </span>
         </motion.div>
 
@@ -109,17 +144,11 @@ export default function HeroSection() {
           transition={{ delay: 0.8 }}
           className="mb-10 h-8"
         >
-          <motion.p
-            key={taglineIndex}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="text-electric-cyan font-[family-name:var(--font-jetbrains-mono)] text-lg"
-          >
+          <p className="text-electric-cyan font-[family-name:var(--font-jetbrains-mono)] text-lg">
             {"> "}
-            {taglines[taglineIndex]}
-            <span className="animate-pulse">_</span>
-          </motion.p>
+            {displayedText}
+            <span className="animate-blink">_</span>
+          </p>
         </motion.div>
 
         {/* CTAs */}

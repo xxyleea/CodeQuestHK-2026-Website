@@ -185,7 +185,7 @@ export default function FAQSection() {
 
       {/* FAQ items */}
       <div className="mx-auto grid max-w-3xl gap-3">
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
           {filteredFaqs.map((faq, index) => (
             <motion.div
               key={faq.question}
