@@ -2,6 +2,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HeroSection from "./components/home/HeroSection";
 import EventOverview from "./components/home/EventOverview";
+import ExpectationsSection from "./components/home/ExpectationsSection";
 import ThemeSection from "./components/home/ThemeSection";
 import EventDetailsSection from "./components/home/EventDetailsSection";
 import TimelineSection from "./components/home/TimelineSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <EventOverview />
         <ThemeSection />
         <EventDetailsSection />
+        <ExpectationsSection />
         <TimelineSection />
         <ComparisonSection />
         <PrizesSection />
