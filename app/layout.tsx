@@ -19,16 +19,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TyphoonHacks 2026 | Hong Kong's First 48-Hour High School Hackathon",
+  title: "TyphoonHacks 2026 | Hong Kong's #1 48-Hour High School Hackathon",
   description:
     "Join Hong Kong's first true 48-hour high school hackathon. Work with hackers from across HK, get real problems from industry partners, and build from scratch.",
   keywords: [
     "hackathon",
     "Hong Kong",
+    "secondary school",
     "high school",
     "technology",
     "coding",
     "innovation",
+    "competition",
   ],
 };
 

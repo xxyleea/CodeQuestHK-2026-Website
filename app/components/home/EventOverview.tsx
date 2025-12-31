@@ -47,12 +47,12 @@ export default function EventOverview() {
               A True Hackathon Experience
             </h3>
             <p className="text-subtle-gray leading-relaxed">
-              TyphoonHacks is Hong Kong&apos;s first genuine 48-hour hackathon
-              where students must build everything from scratch during the
-              event. Unlike other competitions where participants pre-prepare
-              their projects, TyphoonHacks requires all development to happen
-              within the limited time frame—creating real-world pressure and
-              authentic innovation.
+              TyphoonHacks is Hong Kong&apos;s first genuine 48-hour high school
+              hackathon where students must build everything from scratch during
+              the event. Unlike other competitions where participants
+              pre-prepare their projects, TyphoonHacks requires all development
+              to happen within the limited time frame—creating real-world
+              pressure and authentic innovation.
             </p>
           </motion.div>
 
