@@ -12,8 +12,8 @@ const comparisons = [
   },
   {
     aspect: "Focus",
-    others: "Business Slides & Pitches",
-    typhoonhacks: "Working Prototypes",
+    others: "Business Slides",
+    typhoonhacks: "Working Prototypes + Pitches",
   },
   {
     aspect: "Work",
