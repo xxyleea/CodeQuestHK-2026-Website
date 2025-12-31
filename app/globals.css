@@ -196,3 +196,13 @@ h6 {
 .animate-blink {
   animation: blink 1s infinite;
 }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+.animate-dash {
+  animation: dash 1s linear infinite;
+}

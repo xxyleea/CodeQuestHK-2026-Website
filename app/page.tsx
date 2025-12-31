@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/home/HeroSection";
 import EventOverview from "./components/home/EventOverview";
 import ThemeSection from "./components/home/ThemeSection";
+import EventDetailsSection from "./components/home/EventDetailsSection";
 import TimelineSection from "./components/home/TimelineSection";
 import ComparisonSection from "./components/home/ComparisonSection";
 import PrizesSection from "./components/home/PrizesSection";
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <EventOverview />
         <ThemeSection />
+        <EventDetailsSection />
         <TimelineSection />
         <ComparisonSection />
         <PrizesSection />
