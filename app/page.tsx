@@ -21,8 +21,8 @@ export default function Home() {
         <TimelineSection />
         <ComparisonSection />
         <PrizesSection />
-        <FAQSection />
         <SponsorsPreview />
+        <FAQSection />
         <FinalCTA />
       </main>
       <Footer />
