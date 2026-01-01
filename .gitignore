@@ -1,59 +1,41 @@
-# Dependencies
-node_modules
-/jspm_packages
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Build output
-/dist
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
 /build
-/out
-.amplify-hosting
 
-# Logs
-logs
-*.log
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
-lerna-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# env files (can opt-in for committing if needed)
+.env*
 
-# OS and Editor files
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.Spotlight-V100
-.Trashes
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# vercel
+.vercel
 
-# Environment variables
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-.env.*.local
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# TypeScript cache
+# typescript
 *.tsbuildinfo
-
-# Optional caches
-.npm
-.eslintcache
-.stylelintcache
-.cache
-.parcel-cache
-
-# Vite-specific
-.vitepress/cache
-.vit
-stats.html
+next-env.d.ts
