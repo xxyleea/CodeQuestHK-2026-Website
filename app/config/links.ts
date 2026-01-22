@@ -12,8 +12,8 @@ export const linksConfig = {
     //   link: "/register", // prob a google form or external site
     // },
     participant: {
-      label: "Get Ready",
-      link: "https:/instagram.com/typhoonhackshk",
+      label: "Register Now",
+      link: "https://forms.gle/a3da5E4WHnTbugaZ6",
     },
     mentor: "/contact",
     volunteer: "/contact",
