@@ -6,8 +6,8 @@ import SectionWrapper from "@/app/components/SectionWrapper";
 
 const eventDetails = {
   dates: {
-    day1: { date: "14 Feb 2026", day: "Saturday", time: "09:00 - 18:00" },
-    day2: { date: "15 Feb 2026", day: "Sunday", time: "09:00 - 17:00" },
+    day1: { date: "14 Feb 2026", day: "Saturday", time: "10:00 - 18:30" },
+    day2: { date: "15 Feb 2026", day: "Sunday", time: "10:00 - 18:30" },
     note: "During CNY holidays",
   },
   participants: {
