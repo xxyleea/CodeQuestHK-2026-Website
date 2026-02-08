@@ -11,7 +11,113 @@ type TimelineEvent = {
   status: "upcoming" | "in progress" | "completed";
 };
 
-const events: TimelineEvent[] = [];
+const events: TimelineEvent[] = [
+  // Day 1
+  {
+    date: "Day 1 • 10:00-10:20",
+    title: "Opening Ceremony",
+    description: "Welcome address and official event kickoff",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 10:20-10:45",
+    title: "Ice Breaking",
+    description: "Get to know your fellow participants and team members",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 10:45-11:00",
+    title: "Problem Statement Reveal",
+    description: "The challenge is unveiled - let the hacking begin!",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 11:00-11:30",
+    title: "Interview Session with Company Rep",
+    description:
+      "Opportunity for each group to ask questions about the problem statement (tentative)",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 11:30-12:30",
+    title: "Dev Session 1",
+    description: "Start building your solution and bringing ideas to life",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 12:30-14:00",
+    title: "Lunch & Networking",
+    description: "Refuel and connect with other teams",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 14:00-15:15",
+    title: "Workshop 1",
+    description: "Learn new skills and techniques to enhance your project",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 15:15-15:45",
+    title: "Break",
+    description: "Take a breather and recharge",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 15:45-18:00",
+    title: "Dev Session 2",
+    description: "Continue development and refine your solution",
+    status: "upcoming",
+  },
+  {
+    date: "Day 1 • 18:00-18:30",
+    title: "Day 1 Debriefing",
+    description: "Progress check-in and first day wrap-up",
+    status: "upcoming",
+  },
+  // Day 2
+  {
+    date: "Day 2 • 10:00-11:00",
+    title: "Dev Session 3",
+    description: "Final sprint begins - polish and complete your project",
+    status: "upcoming",
+  },
+  {
+    date: "Day 2 • 11:00-12:30",
+    title: "Workshop 2",
+    description: "Take your project to the next level",
+    status: "upcoming",
+  },
+  {
+    date: "Day 2 • 12:45-14:00",
+    title: "Lunch",
+    description: "Last chance to fuel up before the final push",
+    status: "upcoming",
+  },
+  {
+    date: "Day 2 • 14:00-16:00",
+    title: "Dev Session 4",
+    description: "Final development session - finish strong!",
+    status: "upcoming",
+  },
+  {
+    date: "Day 2 • 16:00-16:30",
+    title: "Final Preparation",
+    description: "Rehearsal time - perfect your pitch and presentation",
+    status: "upcoming",
+  },
+  {
+    date: "Day 2 • 16:30-17:30",
+    title: "Presentation & Judging",
+    description: "Showcase your innovation to judges and compete for prizes",
+    status: "upcoming",
+  },
+  {
+    date: "Day 2 • 17:30-18:30",
+    title: "Awards & Closing",
+    description: "Results announcement, prize distribution, and celebration!",
+    status: "upcoming",
+  },
+];
 
 function EventCard({
   event,
