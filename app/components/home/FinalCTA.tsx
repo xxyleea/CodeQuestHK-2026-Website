@@ -1,42 +1,43 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ParticleBackground from "@/app/components/ParticleBackground";
 import { linksConfig } from "@/app/config/links";
 
 export default function FinalCTA() {
-  // const [timeLeft, setTimeLeft] = useState({
-  //   days: 0,
-  //   hours: 0,
-  //   minutes: 0,
-  //   seconds: 0,
-  // });
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
-  // useEffect(() => {
-  //   // Registration deadline: Feb 28, 2026
-  //   const deadline = new Date("2026-02-28T23:59:59").getTime();
+  useEffect(() => {
+    // Registration deadline: Feb 12, 2026 00:00 HKT
+    const deadline = new Date("2026-02-12T00:00:00+08:00").getTime();
 
-  //   const updateTimer = () => {
-  //     const now = new Date().getTime();
-  //     const difference = deadline - now;
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const difference = deadline - now;
 
-  //     if (difference > 0) {
-  //       setTimeLeft({
-  //         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-  //         hours: Math.floor(
-  //           (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  //         ),
-  //         minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-  //         seconds: Math.floor((difference % (1000 * 60)) / 1000),
-  //       });
-  //     }
-  //   };
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          ),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        });
+      }
+    };
 
-  //   updateTimer();
-  //   const interval = setInterval(updateTimer, 1000);
-  //   return () => clearInterval(interval);
-  // }, []);
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative overflow-hidden py-24">
@@ -68,38 +69,38 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           className="text-storm-white mb-8 font-[family-name:var(--font-space-grotesk)] text-4xl font-bold md:text-5xl lg:text-6xl"
         >
-          Registration Opening Soon!
+          Claim My Spot
         </motion.h2>
 
         {/* Countdown timer */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mb-10"
+          className="mb-12"
         >
-          <div className="flex justify-center gap-4 md:gap-6">
+          <div className="flex justify-center gap-8 md:gap-12 lg:gap-16">
             {[
               { value: timeLeft.days, label: "Days" },
               { value: timeLeft.hours, label: "Hours" },
               { value: timeLeft.minutes, label: "Minutes" },
               { value: timeLeft.seconds, label: "Seconds" },
-            ].map((unit) => (
+            ].map((unit, index) => (
               <div
                 key={unit.label}
-                className="glass min-w-[70px] rounded-xl p-4 md:min-w-[90px]"
+                className="relative flex flex-col items-center"
               >
-                <div className="text-electric-cyan font-[family-name:var(--font-space-grotesk)] text-3xl font-bold md:text-4xl">
+                <div className="text-electric-cyan font-[family-name:var(--font-space-grotesk)] text-5xl font-bold md:text-6xl lg:text-7xl">
                   {String(unit.value).padStart(2, "0")}
                 </div>
-                <div className="text-subtle-gray mt-1 text-xs md:text-sm">
+                <div className="text-storm-white/70 mt-2 text-sm font-medium tracking-wider uppercase md:text-base">
                   {unit.label}
                 </div>
               </div>
             ))}
           </div>
-        </motion.div> */}
+        </motion.div>
 
         {/* CTA buttons */}
         <motion.div
@@ -107,7 +108,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="mt-20 flex flex-col items-center justify-center gap-4"
+          className="flex flex-col items-center justify-center gap-4"
         >
           <Link
             href={linksConfig.registration.participant.link}
