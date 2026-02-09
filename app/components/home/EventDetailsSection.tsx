@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Clock, School, UsersRound } from "lucide-react";
+import Image from "next/image";
 import SectionWrapper from "@/app/components/SectionWrapper";
 
 const eventDetails = {
@@ -17,8 +18,8 @@ const eventDetails = {
     teamSize: "3-5",
   },
   venue: {
-    status: "To Be Announced",
-    note: "We're working with leading universities and venues in Hong Kong to provide the best possible experience.",
+    name: "City University of Hong Kong",
+    location: "LT15, 4/F, Yeung Kin Man Academic Building",
   },
 };
 
@@ -31,9 +32,6 @@ function DateCard() {
       transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
       className="glass group relative h-full overflow-hidden rounded-2xl p-6 md:p-8"
     >
-      {/* Decorative gradient */}
-      <div className="from-electric-cyan/10 absolute inset-0 bg-gradient-to-br via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
       <h3 className="text-storm-white mb-6 font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
         Event Dates
       </h3>
@@ -99,9 +97,6 @@ function ParticipantsCard() {
       transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
       className="glass group relative h-full overflow-hidden rounded-2xl p-6 md:p-8"
     >
-      {/* Decorative gradient */}
-      <div className="from-vivid-purple/10 absolute inset-0 bg-gradient-to-br via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
       <h3 className="text-storm-white mb-6 font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
         Participants
       </h3>
@@ -162,47 +157,34 @@ function VenueCard() {
       transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
       className="glass group relative h-full overflow-hidden rounded-2xl p-6 md:p-8"
     >
-      {/* Animated dashed border for TBD state */}
-      <div className="pointer-events-none absolute inset-0 rounded-2xl">
-        <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-          <rect
-            x="1"
-            y="1"
-            width="calc(100% - 2px)"
-            height="calc(100% - 2px)"
-            rx="16"
-            ry="16"
-            fill="none"
-            stroke="rgba(245, 158, 11, 0.3)"
-            strokeWidth="2"
-            strokeDasharray="8 6"
-            className="animate-dash"
-          />
-        </svg>
-      </div>
-
-      {/* Decorative gradient */}
-      <div className="from-warning-amber/10 absolute inset-0 bg-gradient-to-br via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
-      <h3 className="text-storm-white mb-4 font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
+      <h3 className="text-storm-white mb-6 font-[family-name:var(--font-space-grotesk)] text-xl font-bold">
         Venue
       </h3>
 
-      {/* TBA State */}
-      <div className="mb-4">
-        <motion.div
-          animate={{ opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="text-warning-amber font-[family-name:var(--font-space-grotesk)] text-2xl font-bold"
-        >
-          {eventDetails.venue.status}
-        </motion.div>
+      {/* CityU Logo and Name */}
+      <div className="mb-6 flex items-center gap-4">
+        <div className="bg-storm-white flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-lg p-2">
+          <Image
+            src="/cityu-logo.svg"
+            alt="City University of Hong Kong"
+            width={64}
+            height={64}
+            className="h-full w-full object-contain"
+          />
+        </div>
+        <div>
+          <p className="text-storm-white text-lg leading-tight font-bold">
+            {eventDetails.venue.name}
+          </p>
+        </div>
       </div>
 
-      {/* Note */}
-      <p className="text-subtle-gray text-sm leading-relaxed">
-        {eventDetails.venue.note}
-      </p>
+      {/* Location Details */}
+      <div className="bg-deep-space/50 rounded-lg">
+        <p className="text-storm-white text-sm font-medium">
+          {eventDetails.venue.location}
+        </p>
+      </div>
     </motion.div>
   );
 }

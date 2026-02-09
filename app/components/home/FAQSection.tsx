@@ -37,7 +37,7 @@ const faqs: FAQItem[] = [
     category: "General",
     question: "When and where will it take place?",
     answer:
-      "TyphoonHacks 2026 will be held from February 14-15, 2026 (during CNY holidays). The venue will be announced shortly. Follow our social media for updates!",
+      "TyphoonHacks 2026 will be held from February 14-15, 2026 (during CNY holidays) at the City University of Hong Kong. Follow our social media for updates!",
   },
   {
     category: "General",

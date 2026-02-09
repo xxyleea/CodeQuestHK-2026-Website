@@ -86,7 +86,7 @@ export default function FinalCTA() {
               { value: timeLeft.hours, label: "Hours" },
               { value: timeLeft.minutes, label: "Minutes" },
               { value: timeLeft.seconds, label: "Seconds" },
-            ].map((unit, index) => (
+            ].map((unit) => (
               <div
                 key={unit.label}
                 className="relative flex flex-col items-center"
